@@ -1,0 +1,9 @@
+version: '3'
+services:
+  redis:
+    image: ghcr.io/deck-app/redis:v6.2
+    volumes:
+      - '${REDIS_DATA_PATH}:/data'
+    ports:
+      - '${REDIS_PORT}:6379'
+volumes: {}
