@@ -24,7 +24,7 @@
   #     - "8.0"
   #   target:
   #     PHP_VERSION
-  
+
   # backend_ws:
   #     label:
   #       Laravel Version
@@ -43,7 +43,7 @@
   #     Enable PHP error reporting?
   #   type:
   #     checkbox
-  #   hint: Check the box to display PHP errors 
+  #   hint: Check the box to display PHP errors
   #   target:
   #     DISPLAY_PHPERROR
   # php_xdebug:
@@ -62,7 +62,7 @@
   #   hint: Incase you have a Laravel project already installed at the selected path
   #   target:
   #     LARAVEL_INSTALL
-    
+
   # mysql_version:
   #   label:
   #     MySQL version
@@ -100,3 +100,5 @@ system:
   ports:
     http:
       REDIS_PORT
+    others:
+      - REDIS_COMMANDER_PORT
